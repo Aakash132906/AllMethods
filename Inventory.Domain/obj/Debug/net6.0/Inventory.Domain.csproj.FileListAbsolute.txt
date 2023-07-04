@@ -1,0 +1,12 @@
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\bin\Debug\net6.0\Inventory.Domain.deps.json
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\bin\Debug\net6.0\Inventory.Domain.dll
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\bin\Debug\net6.0\Inventory.Domain.pdb
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.csproj.AssemblyReference.cache
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.AssemblyInfoInputs.cache
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.AssemblyInfo.cs
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.csproj.CoreCompileInputs.cache
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.dll
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\refint\Inventory.Domain.dll
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\Inventory.Domain.pdb
+C:\Users\arunk\Downloads\InventorySync\InventorySync\Inventory.Domain\obj\Debug\net6.0\ref\Inventory.Domain.dll
