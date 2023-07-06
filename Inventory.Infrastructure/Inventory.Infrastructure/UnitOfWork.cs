@@ -1,7 +1,7 @@
 ﻿using PersonalWork.Application.Abstractions.Repositories;
 using PersonalWork.Infrastructure.Persistence;
 using PersonalWork.Infrastructure.Persistence.Repositories;
-using PersonalWork.Infrastructure.DevDB;
+using PersonalWork.Infrastructure.LocalDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;

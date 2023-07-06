@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using PersonalWork.Application.Command.Users.CreateUser;
 using PersonalWork.Application.Queries;
 using PersonalWork.Application.Queries.Users;
 using PersonalWork.Domain.DBModel;
@@ -14,7 +15,7 @@ namespace PersonalWork.Application.Common.Mapping
     {
         public MappingProfile()
         {
-            //CreateMap<UpdateUserCommand, User>().ReverseMap();
+            CreateMap<CreateUserCommand, User>().ReverseMap();
             CreateMap<GetUserQuery, User>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
         }

@@ -14,7 +14,7 @@ namespace PersonalWork.Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
             //services.AddTrGateWayAPIient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             //services.AddTrGateWayAPIient(typeof(IPipelineBehavior<,>), typeof(PagingBehavior<,>));
-            //services.AddTransient<TokenService>();
+            services.AddTransient<TokenService>();
             // services.AddTrGateWayAPIient<ILogService, LogService>();
             return services;
         }

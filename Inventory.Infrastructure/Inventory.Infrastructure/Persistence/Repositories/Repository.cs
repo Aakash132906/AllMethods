@@ -8,6 +8,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using PersonalWork.Application.Command.Users.LoginUser;
 
 namespace PersonalWork.Infrastructure.Persistence.Repositories
 {
@@ -130,6 +131,11 @@ namespace PersonalWork.Infrastructure.Persistence.Repositories
         }
 
         public Task GetByAsync(int id, string userToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object AddAsync(LoginUserCommand request)
         {
             throw new NotImplementedException();
         }

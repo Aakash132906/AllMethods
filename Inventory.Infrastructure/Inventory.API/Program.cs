@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using PersonalWork.API;
 using Serilog;
 
-namespace Inventory.API
+namespace PersonalWork.API
 {
     public class Program
     {

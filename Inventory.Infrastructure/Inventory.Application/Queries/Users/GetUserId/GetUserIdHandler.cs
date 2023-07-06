@@ -21,10 +21,14 @@ namespace PersonalWork.Application.Queries.Users.GetUserId
         }
         public async Task<UserDto> Handle(GetUserIdQuery request, CancellationToken cancellationToken)
         {
+            if(request.Id <= 0 || request.Id.ToString()==null)
+            {
+                throw new Exception("InValid User Id");
+            }
             var responce = await UnitOfWork.GetReposiotory<User>().GetAsync(request.Id);
             if (responce == null)
             {
-                return null;
+                throw new Exception("User Id Not Found");
             }
             else
             {

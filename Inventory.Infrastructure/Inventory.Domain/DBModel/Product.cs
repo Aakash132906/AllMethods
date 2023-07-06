@@ -42,3 +42,4 @@ namespace PersonalWork.Domain.DBModel
 
         public long? ItemNumber { get; set; }
     }
+}

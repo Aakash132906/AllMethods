@@ -24,6 +24,10 @@ namespace PersonalWork.Application.Queries.Users.GetUser
         public async Task<List<UserDto>> Handle(GetUserQuery request, CancellationToken cancellationToken)
         {
             var response = await UnitOfWork.GetReposiotory<User>().GetListAsync();
+            if(response == null)
+            {
+                throw new Exception("No Data Found");
+            }
             var data = Mapper.Map<List<UserDto>>(response);
             return data;
         }

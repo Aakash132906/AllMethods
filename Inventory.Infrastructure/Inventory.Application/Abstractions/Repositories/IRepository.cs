@@ -1,4 +1,5 @@
-﻿using PersonalWork.Application.Common.Models;
+﻿using PersonalWork.Application.Command.Users.LoginUser;
+using PersonalWork.Application.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,6 @@ namespace PersonalWork.Application.Abstractions.Repositories
         Task<IEnumerable<TEntity>> GetSPResult(string query);
         Task<int> ExecuteWithStoreProcedureAsync(string query, params object[] parameters);
         Task GetByAsync(int id, string userToken);
-   
+        object AddAsync(LoginUserCommand request);
     }
 }

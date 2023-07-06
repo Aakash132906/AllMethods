@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PersonalWork.Infrastructure.LocalDB;
 
 namespace PersonalWork.Infrastructure
 {
@@ -13,7 +14,7 @@ namespace PersonalWork.Infrastructure
         {
             if (configuration.GetConnectionString("ServerType") == "sql")
             {
-                services.AddDbContext<InventoryContext>(option => option.UseSqlServer(configuration.GetConnectionString("Inventory")), ServiceLifetime.Transient);
+                services.AddDbContext<FtoysContext>(option => option.UseSqlServer(configuration.GetConnectionString("Inventory")), ServiceLifetime.Transient);
                 // services.AddDGateWayAPIontext<AppContext>(option => option.UseMySQL(configuration.GetConnectionString("Xena")), ServiceLifetime.Transient);
             }
             else
@@ -22,7 +23,7 @@ namespace PersonalWork.Infrastructure
                 // services.AddDGateWayAPIontext<GateWayAPIContext>(option => option.UseSqlServer(configuration.GetConnectionString("Xena")), ServiceLifetime.TrGateWayAPIient);
             }
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<InventoryContext>();
+            services.AddScoped<FtoysContext>();
             return services;
         }
         //public static IServiceCollection AddAmazonServices(this IServiceCollection services, IConfiguration config)
@@ -40,7 +41,7 @@ namespace PersonalWork.Infrastructure
                 .GetRequiredService<IServiceScopeFactory>()
                 .CreateScope())
             {
-                using (var context = serviceScope.ServiceProvider.GetService<InventoryContext>())
+                using (var context = serviceScope.ServiceProvider.GetService<FtoysContext>())
                 {
                     context.Database.Migrate();
                 }

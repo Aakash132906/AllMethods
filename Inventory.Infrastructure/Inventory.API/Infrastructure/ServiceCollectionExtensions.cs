@@ -3,7 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
-namespace Inventory.API.Infrastructure
+namespace PersonalWork.API.Infrastructure
 {
     public static class ServiceCollectionExtensions
     {

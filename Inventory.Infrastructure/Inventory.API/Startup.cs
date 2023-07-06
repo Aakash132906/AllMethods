@@ -4,8 +4,9 @@ using PersonalWork.Application.Utils;
 using PersonalWork.Infrastructure;
 using PersonalWork.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Inventory.API.Infrastructure;
-using PersonalWork.Infrastructure.DevDB;
+using PersonalWork.API.Infrastructure;
+using PersonalWork.Infrastructure.LocalDB;
+using PersonalWork.API.Infrastructure;
 
 namespace PersonalWork.API
 {

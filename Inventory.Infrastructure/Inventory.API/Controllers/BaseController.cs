@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace Inventory.API.Controllers
+namespace PersonalWork.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
@@ -11,9 +11,6 @@ namespace Inventory.API.Controllers
     public class BaseController : ControllerBase
     {
         private IMediator _mediator;
-
-
-
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
     }
 }

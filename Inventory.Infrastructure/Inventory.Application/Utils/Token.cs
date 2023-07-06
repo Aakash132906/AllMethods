@@ -9,5 +9,7 @@ namespace PersonalWork.Application.Utils
     public class Token
     {
         public string AccessToken { get; set; }
+        public long Id { get; set; }
     }
+ 
 }
