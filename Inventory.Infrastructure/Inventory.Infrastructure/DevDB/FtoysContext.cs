@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using PersonalWork.Domain.DBModel;
+using PersonalWork.Infrastructure.LocalDB;
 
 namespace PersonalWork.Infrastructure.DevDB;
 

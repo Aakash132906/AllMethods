@@ -25,4 +25,10 @@
     <ProjectReference Include="..\Inventory.Domain\PersonalWork.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Command\NewFolder\" />
+    <Folder Include="Queries\NewFolder\" />
+    <Folder Include="Queries\Products1\SearchProduct1\" />
+  </ItemGroup>
+
 </Project>
